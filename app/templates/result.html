@@ -47,7 +47,10 @@
 
                         <h2>❤️ HIGH RISK</h2>
 
-                        <p>Your prediction indicates a higher possibility of heart disease.</p>
+                        <p>
+                            Your prediction indicates a higher possibility
+                            of heart disease.
+                        </p>
 
                     </div>
 
@@ -57,7 +60,10 @@
 
                         <h2>💚 LOW RISK</h2>
 
-                        <p>Your prediction indicates a lower possibility of heart disease.</p>
+                        <p>
+                            Your prediction indicates a lower possibility
+                            of heart disease.
+                        </p>
 
                     </div>
 
@@ -71,15 +77,16 @@
 
                 </h4>
 
-                <div class="progress mb-4" style="height:30px;">
+                <div class="progress mb-4" style="height: 30px;">
 
                     <div
+                        id="confidenceBar"
                         class="progress-bar {% if color == 'danger' %}bg-danger{% else %}bg-success{% endif %} progress-bar-striped progress-bar-animated"
                         role="progressbar"
                         aria-valuenow="{{ confidence }}"
                         aria-valuemin="0"
                         aria-valuemax="100"
-                        style="width: {{ confidence }}%;">
+                        data-confidence="{{ confidence }}">
 
                         {{ confidence }}%
 
@@ -150,6 +157,15 @@
     <p>Pragati Engineering College</p>
 
 </footer>
+
+<script>
+
+    const confidenceBar = document.getElementById("confidenceBar");
+    const confidence = confidenceBar.dataset.confidence;
+
+    confidenceBar.style.width = confidence + "%";
+
+</script>
 
 </body>
 
