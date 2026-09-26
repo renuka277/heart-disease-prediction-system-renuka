@@ -1,0 +1,205 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   GENERAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#EAF4FF,#F8FAFC);
+
+    min-height:100vh;
+
+    color:#1E293B;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+h1{
+
+    color:#DC2626;
+
+    font-weight:700;
+
+}
+
+.lead{
+
+    color:#475569;
+
+    font-size:18px;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:22px;
+
+    padding:30px;
+
+    background:white;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================
+   LABELS
+========================================== */
+
+.form-label{
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ==========================================
+   INPUTS
+========================================== */
+
+.form-control,
+.form-select{
+
+    height:50px;
+
+    border-radius:12px;
+
+    border:1px solid #CBD5E1;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn-danger{
+
+    background:#DC2626;
+
+    border:none;
+
+    padding:12px 40px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-danger:hover{
+
+    background:#B91C1C;
+
+    transform:scale(1.05);
+
+}
+
+.btn-secondary{
+
+    border-radius:40px;
+
+}
+
+/* ==========================================
+   RESULT COLORS
+========================================== */
+
+.text-success{
+
+    font-size:35px;
+
+    font-weight:700;
+
+}
+
+.text-danger{
+
+    font-size:35px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#64748B;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.card{
+
+    padding:20px;
+
+}
+
+h1{
+
+    font-size:28px;
+
+}
+
+.btn{
+
+    width:100%;
+
+    margin-bottom:10px;
+
+}
+
+}
