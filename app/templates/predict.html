@@ -43,20 +43,33 @@
             <div class="row">
 
                 <div class="col-md-6 mb-3">
+
                     <label class="form-label">Age</label>
-                    <input type="number" name="age" class="form-control" required min="1" max="120">
+
+                    <input
+                        type="number"
+                        name="age"
+                        class="form-control"
+                        required
+                        min="1"
+                        max="120">
+
                 </div>
 
                 <div class="col-md-6 mb-3">
+
                     <label class="form-label">Gender</label>
 
-                    <select name="sex" class="form-select" required>
+                    <select
+                        name="sex"
+                        class="form-select"
+                        required>
 
                         <option value="">Select Gender</option>
 
-                        <option>Male</option>
+                        <option value="Male">Male</option>
 
-                        <option>Female</option>
+                        <option value="Female">Female</option>
 
                     </select>
 
@@ -77,19 +90,32 @@
 
                 <div class="col-md-6 mb-3">
 
-                    <label class="form-label">Chest Pain Type</label>
+                    <label class="form-label">
+                        Chest Pain Type
+                    </label>
 
-                    <select name="chest_pain_type" class="form-select" required>
+                    <select
+                        name="chest_pain_type"
+                        class="form-select"
+                        required>
 
                         <option value="">Select</option>
 
-                        <option>Typical Angina</option>
+                        <option value="Typical angina">
+                            Typical Angina
+                        </option>
 
-                        <option>Atypical Angina</option>
+                        <option value="Atypical angina">
+                            Atypical Angina
+                        </option>
 
-                        <option>Non-anginal Pain</option>
+                        <option value="Non-anginal pain">
+                            Non-anginal Pain
+                        </option>
 
-                        <option>Asymptomatic</option>
+                        <option value="Asymptomatic">
+                            Asymptomatic
+                        </option>
 
                     </select>
 
@@ -97,12 +123,15 @@
 
                 <div class="col-md-6 mb-3">
 
-                    <label class="form-label">Maximum Heart Rate</label>
+                    <label class="form-label">
+                        Maximum Heart Rate
+                    </label>
 
-                    <input type="number"
-                           class="form-control"
-                           name="Max_heart_rate"
-                           required>
+                    <input
+                        type="number"
+                        class="form-control"
+                        name="Max_heart_rate"
+                        required>
 
                 </div>
 
@@ -119,9 +148,9 @@
 
                         <option value="">Select</option>
 
-                        <option>Yes</option>
+                        <option value="Yes">Yes</option>
 
-                        <option>No</option>
+                        <option value="No">No</option>
 
                     </select>
 
@@ -130,9 +159,7 @@
                 <div class="col-md-6 mb-3">
 
                     <label class="form-label">
-
                         Oldpeak
-
                     </label>
 
                     <input
@@ -160,9 +187,7 @@
                 <div class="col-md-6 mb-3">
 
                     <label class="form-label">
-
                         Slope
-
                     </label>
 
                     <select
@@ -172,11 +197,17 @@
 
                         <option value="">Select</option>
 
-                        <option>Upsloping</option>
+                        <option value="Upsloping">
+                            Upsloping
+                        </option>
 
-                        <option>Flat</option>
+                        <option value="Flat">
+                            Flat
+                        </option>
 
-                        <option>Downsloping</option>
+                        <option value="Downsloping">
+                            Downsloping
+                        </option>
 
                     </select>
 
@@ -185,9 +216,7 @@
                 <div class="col-md-6 mb-3">
 
                     <label class="form-label">
-
                         Major Vessels
-
                     </label>
 
                     <select
@@ -197,13 +226,13 @@
 
                         <option value="">Select</option>
 
-                        <option>0</option>
+                        <option value="Zero">0</option>
 
-                        <option>1</option>
+                        <option value="One">1</option>
 
-                        <option>2</option>
+                        <option value="Two">2</option>
 
-                        <option>3</option>
+                        <option value="Three">3</option>
 
                     </select>
 
@@ -212,9 +241,7 @@
                 <div class="col-md-12 mb-4">
 
                     <label class="form-label">
-
                         Thalassemia
-
                     </label>
 
                     <select
@@ -224,11 +251,17 @@
 
                         <option value="">Select</option>
 
-                        <option>Normal</option>
+                        <option value="Normal">
+                            Normal
+                        </option>
 
-                        <option>Fixed Defect</option>
+                        <option value="Fixed Defect">
+                            Fixed Defect
+                        </option>
 
-                        <option>Reversible Defect</option>
+                        <option value="Reversable Defect">
+                            Reversible Defect
+                        </option>
 
                     </select>
 
@@ -239,6 +272,7 @@
             <div class="text-center">
 
                 <button
+                    type="submit"
                     class="btn btn-danger btn-lg">
 
                     <i class="bi bi-heart-pulse-fill"></i>
@@ -247,8 +281,9 @@
 
                 </button>
 
-                <a href="/"
-                   class="btn btn-secondary btn-lg ms-2">
+                <a
+                    href="/"
+                    class="btn btn-secondary btn-lg ms-2">
 
                     Home
 
