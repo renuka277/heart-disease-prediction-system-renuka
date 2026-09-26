@@ -4,7 +4,10 @@
 # ==========================================
 
 from flask import Flask, render_template, request
-from model_utils import predict_heart_disease
+try:
+    from .model_utils import predict_heart_disease
+except ImportError:
+    from model_utils import predict_heart_disease
 
 app = Flask(__name__)
 
